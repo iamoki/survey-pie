@@ -1,7 +1,7 @@
 import SelectInput from '../SelectInput';
 import TextInput from '../TextInput';
 
-function Body({ type }) {
+function Body({ type, answer, setAnswer }) {
   let InputComponent = null;
   if (type === 'select') {
     InputComponent = SelectInput;
@@ -11,7 +11,7 @@ function Body({ type }) {
   }
   return (
     <>
-      <InputComponent />
+      <InputComponent answer={answer} setAnswer={setAnswer} />
     </>
   );
 }
