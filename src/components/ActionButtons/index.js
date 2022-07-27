@@ -1,40 +1,53 @@
 import { useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
+
+import Button from '../Button';
 
 function ActionButtons({ questionsLength, step }) {
   const isLast = questionsLength - 1 === step;
   const navigate = useNavigate();
   return (
-    <div>
+    <ActionButtonsWrapper>
       {/* 스텝넘버가 0이라면 이전버튼은 노출되지않고 0 다음 숫자일 경우 이전버튼 그리기 */}
       {step === 0 || (
-        <button
+        <Button
+          type="TERTIARY"
           onClick={() => {
             navigate(`${step - 1}`);
           }}
         >
           이전
-        </button>
+        </Button>
       )}
       {/* isLast에있는 questionsLength가 마지막번호가 아니라면 다음버튼이 보여지고 마지막번호라면 제출번호 그리기 */}
       {isLast ? (
-        <button
+        <Button
+          type="PRIMARY"
           onClick={() => {
             navigate('/done');
           }}
         >
           제출
-        </button>
+        </Button>
       ) : (
-        <button
+        <Button
+          type="PRIMARY"
           onClick={() => {
             navigate(`${step + 1}`);
           }}
         >
           다음
-        </button>
+        </Button>
       )}
-    </div>
+    </ActionButtonsWrapper>
   );
 }
+
+const ActionButtonsWrapper = styled.div`
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 72px;
+`;
 
 export default ActionButtons;

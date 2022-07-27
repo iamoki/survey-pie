@@ -1,5 +1,9 @@
+import styled from 'styled-components';
+
 function CompletionPage() {
-  return <div>CompletionPage</div>;
+  return <CompletionPageWrapper>CompletionPage</CompletionPageWrapper>;
 }
+
+const CompletionPageWrapper = styled.div``;
 
 export default CompletionPage;
