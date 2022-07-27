@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 
+import useCurrentAnswer from '../../hooks/useCurrentAnswer';
+import useCurrentQuestion from '../../hooks/useCurrentQuestion';
 import ActionButtons from '../ActionButtons';
 import Body from '../Body';
 import Desc from '../Desc';
 import Title from '../Title';
 
-function QuestionBox({ question, questionsLength, step, answer, setAnswer }) {
+function QuestionBox() {
+  // 답변을 받아오는 customHooks
+  const [answer, setAnswer] = useCurrentAnswer();
+  // 질문 정보에 대한 customHooks
+  const question = useCurrentQuestion();
+
   return (
     <QuestionBoxWrapper>
       <Title>{question.title}</Title>
@@ -16,7 +23,7 @@ function QuestionBox({ question, questionsLength, step, answer, setAnswer }) {
         setAnswer={setAnswer}
         options={question.options}
       />
-      <ActionButtons questionsLength={questionsLength} step={step} />
+      <ActionButtons />
     </QuestionBoxWrapper>
   );
 }
