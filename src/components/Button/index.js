@@ -9,12 +9,13 @@ const colorMap = {
 };
 
 const Button = styled.button`
-  width: 200px;
+  min-width: 200px;
   padding: 16px 24px;
   border-radius: 4px;
   color: ${({ type }) => colorMap[type].BUTTON.DEFAULT.COLOR};
   background: ${({ type }) => colorMap[type].BUTTON.DEFAULT.BACKGROUND};
   font-weight: bold;
+  font-size: 18px;
 
   border: ${({ type }) =>
     type === 'TERTIARY'
