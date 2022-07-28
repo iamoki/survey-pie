@@ -28,6 +28,7 @@ const AppWrapper = styled.div`
 `;
 
 const Box = styled.div`
+  position: relative;
   display: flex;
   width: 700px;
   min-height: 500px;

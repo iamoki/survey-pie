@@ -16,7 +16,6 @@ function SelectInput({ answer = [], setAnswer, options }) {
   const handleChange = (isChecked, index) => {
     if (isChecked) {
       const max = options?.max ?? 1;
-      console.log(max, answer.length);
       if (answer.length >= max) {
         return;
       }
