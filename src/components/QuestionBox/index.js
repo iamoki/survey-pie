@@ -13,6 +13,10 @@ function QuestionBox() {
   // 질문 정보에 대한 customHooks
   const question = useCurrentQuestion();
 
+  if (!question) {
+    return null;
+  }
+
   return (
     <QuestionBoxWrapper>
       <Title>{question.title}</Title>
