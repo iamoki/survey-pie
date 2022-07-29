@@ -113,11 +113,8 @@
 ## 완성 화면
 
 <div style="display: flex; flex-wrap: wrap;">
-  <img width="50%" src="https://user-images.githubusercontent.com/76725512/181681381-70f88736-2b74-4888-bbea-bb54b3914190.png">
-
-  <img width="50%" src="https://user-images.githubusercontent.com/76725512/181681386-d7f9b873-d2c6-4c7c-bc55-259c47b97bc9.png">
-
-  <img width="50%" src="https://user-images.githubusercontent.com/76725512/181681391-74b5c3ea-9ff8-4738-ab54-abcbffccf2bc.png">
-
-  <img width="50%" src="https://user-images.githubusercontent.com/76725512/181681392-9e9cbc2e-72e6-4c33-ab7d-a12db3778a6c.png">
+  <img width="50%" alt="1" src="https://user-images.githubusercontent.com/76725512/181682219-9f6e4f03-5922-42f6-be02-1b1d5c638127.png">
+  <img width="50%" alt="2" src="https://user-images.githubusercontent.com/76725512/181682224-5042b15e-4569-4bde-ba29-ab67e0eedfbf.png">
+  <img width="50%" alt="3" src="https://user-images.githubusercontent.com/76725512/181682229-a68ee437-874e-4df9-a8e2-6426e3fbd6ae.png">
+  <img width="50%" alt="4" src="https://user-images.githubusercontent.com/76725512/181682231-cee66ebd-a529-41ca-9c21-a8eb8df89f3c.png">
 </div>
