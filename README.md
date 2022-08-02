@@ -1,3 +1,5 @@
+## 📝 [만들어진 과정을 적어보았습니다 click :)](https://velog.io/@aoh1223/SurveyProject-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0)
+
 # Survey(설문) 프로젝트 설계 🛠
 
 1. 기본 컴포넌트 구현및 페이지분류
